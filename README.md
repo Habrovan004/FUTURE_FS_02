@@ -27,24 +27,29 @@ A full-stack Client Lead Management System built with React, Node.js, Express, a
 ---
 
 ## Project Structure
-
+ 
 ```
-FUTURE_02/
-├── crm-frontend/          # React frontend (Vite)
+FUTURE_FS_02/
+├── README.md
+├── crm-frontend/                  # React frontend (Vite)
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── LeadForm.jsx
-│   │   │   └── LeadList.jsx
+│   │   │   ├── LeadForm.jsx       # Form to add new leads
+│   │   │   └── LeadList.jsx       # Lead cards with status & notes
 │   │   ├── pages/
-│   │   │   └── Login.jsx
-│   │   ├── App.jsx
-│   │   └── App.css
+│   │   │   └── Login.jsx          # Admin login page
+│   │   ├── App.jsx                # Root component + auth guard
+│   │   ├── App.css                # Global styles
+│   │   └── main.jsx
+│   ├── .gitignore
 │   └── package.json
 │
-└── mini-crm/              # Node.js backend
+└── mini-crm/                      # Node.js backend
     ├── models/
-    ├── server.js
-    ├── .env
+    │   └── Lead.js                # Mongoose lead schema
+    ├── server.js                  # Express API + auth routes
+    ├── .env                       # Environment variables (not pushed)
+    ├── .gitignore
     └── package.json
 ```
 

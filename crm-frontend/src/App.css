@@ -630,3 +630,48 @@ body {
   background: var(--gray-50);
   border-color: var(--gray-300);
 }
+/* ── Delete Button ────────────────────────────── */
+.btn-delete {
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-delete:hover {
+  background: var(--red-light);
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.delete-confirm {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-confirm-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--red);
+}
+
+.btn-confirm-yes {
+  height: 26px; padding: 0 10px;
+  background: var(--red); color: white;
+  border: none; border-radius: var(--radius-sm);
+  font-size: 12px; font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-confirm-no {
+  height: 26px; padding: 0 10px;
+  background: var(--gray-100); color: var(--gray-700);
+  border: 1px solid var(--gray-200); border-radius: var(--radius-sm);
+  font-size: 12px; font-weight: 500;
+  cursor: pointer;
+}

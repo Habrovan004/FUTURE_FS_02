@@ -27,7 +27,7 @@ A full-stack Client Lead Management System built with React, Node.js, Express, a
 ---
 
 ## Project Structure
-
+ 
 ```
 FUTURE_02/
 ├── crm-frontend/          # React frontend (Vite)
